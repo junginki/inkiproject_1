@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃연습</title>
+  <style>
+    #wrap {
+      width: 1000px;
+      height: 1000px;
+      margin: 0 auto;
+      border: 1px solid #000;
+    }
+
+    article {
+      width: 300px;
+      height: 200px;
+      margin: 5px;
+    }
+
+    #top {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .buttom {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .buttomright {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+
+    <section>
+      <div id="top">
+
+        <div id="left">
+          <article style="background-color: red;">left-top</article>
+          <article style="background-color: blue;">left-bottom</article>
+        </div>
+
+        <article style="background-color: red; height: 400px;"> tallright</article>
+
+        <div id="right">
+          <article style="background-color: blue;">right-top</article>
+          <article style="background-color: blue;">right-bottom</article>
+        </div>
+
+      </div>
+
+
+      <div class="buttom">
+
+        <div id="buttomleft">
+          <article style="background-color: red; width: 645px;">left_tall_buttom</article>
+        </div>
+
+        <div class="buttomright">
+          <article style="background-color: blue; height: 150px;">rightbuttom blue</article>
+          <article style="background-color: blue; height: 40px;">rightbuttom blue</article>
+        </div>
+      </div>
+
+
+
+
+    </section>
+
+
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>470-유형별 flex 레이아웃-2</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    /* 복붙완료@@@@@@@@@@@@@@@ */
+    #wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      flex-flow: row nowrap;
+
+      justify-content: space-between;
+
+      width: 800px;
+      margin: 80px auto;
+    }
+
+    article {
+      width: 254px;
+      text-indent: -9999px;
+    }
+
+    header>article:nth-child(1) {
+      height: 250px;
+      margin-bottom: 20px;
+    }
+
+    header>article:nth-child(2) {
+      height: 200px;
+      margin-bottom: 20px;
+    }
+
+    header>article:nth-child(3) {
+      height: 350px;
+    }
+
+    section>article:nth-of-type(1) {
+      height: 660px;
+      margin-bottom: 20px;
+    }
+
+    section>article:nth-of-type(2) {
+      height: 160px;
+    }
+
+    footer>article:first-child {
+      height: 150px;
+      margin-bottom: 20px;
+    }
+
+    footer>article:nth-child(2) {
+      height: 450px;
+      margin-bottom: 20px;
+    }
+
+    footer>article:last-child {
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <article style="background-color: #daba57;">1</article>
+      <article style="background-color: #cc7e7a;">2</article>
+      <article style="background-color: #aec344;">3</article>
+    </header>
+
+    <section>
+      <article style="background-color: #b298d7;">1</article>
+      <article style="background-color: #cc7e7a;">2</article>
+    </section>
+
+    <footer>
+      <article style="background-color: #b9b0b1;">1</article>
+      <article style="background-color: #aec344;">2</article>
+      <article style="background-color: #daba57;">3</article>
+    </footer>
+  </div>
+</body>
+
+</html>

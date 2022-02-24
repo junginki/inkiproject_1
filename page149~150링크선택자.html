@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>링크선택자</title>
+  <style>
+    /* 149~150p  a:link:after {
+      content: ' - 'attr(href);
+      뒤에 http://~~를 알려주는 기능*/
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: red;
+    }
+
+    a:link:after {
+      content: ' - 'attr(href);
+    }
+  </style>
+</head>
+
+<body>
+  <h1><a>Nothing</a></h1>
+  <h1><a href="http://hanbit.co.kr">Hanbit Media</a></h1>
+  <h1><a href="https://github.com">Github</a></h1>
+</body>
+
+</html>

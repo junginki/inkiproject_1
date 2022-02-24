@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page229_float숙제</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+    #wrap {
+      width: 1000px;
+      margin: 20px auto;
+      color: brown;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    header,
+    nav,
+    aside,
+    section,
+    footer {
+      border: 2px solid #000;
+      box-sizing: border-box;
+    }
+
+    /* width의 size는 모두 1000px로 통일 */
+
+    header {
+      width: 1000px;
+      margin-bottom: 5px;
+    }
+
+    header>h1 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    nav {
+      width: 1000px;
+      margin-bottom: 5px;
+    }
+
+    aside {
+      float: left;
+      display: block;
+      width: 295px;
+      height: 300px;
+      margin-right: 5px;
+      line-height: 300px;
+    }
+
+    section {
+      width: 700px;
+      height: 300px;
+      line-height: 300px;
+      float: right;
+    }
+
+
+
+
+
+    div.container_box {
+      display: block;
+      clear: both;
+      content: '';
+    }
+
+    /* aside , section의 float 마감처리@@@@@@@@@@@@@@@@@@@@ */
+
+    footer {
+      display: block;
+      float: left;
+      width: 1000px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+
+    <header>
+      <h1>Header</h1>
+    </header>
+
+    <hr />
+
+    <nav>
+      <ul>
+        <li>Navigation</li>
+      </ul>
+    </nav>
+    <hr />
+
+    <div class=" container_box">
+
+      <aside>
+        <div>Aside</div>
+      </aside>
+
+      <section>
+
+        <article>Section</article>
+        <hr />
+
+      </section>
+
+    </div>
+    <hr />
+
+    <footer>
+      <address>Footer</address>
+    </footer>
+  </div>
+</body>
+
+</html>

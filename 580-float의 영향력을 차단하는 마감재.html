@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>580-float의 영향력을 차단하는 마감재</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+    ul {
+      width: 606px;
+      margin: 0 auto;
+    }
+
+    ul:after {
+      display: block;
+      clear: both;
+      content: '';
+    }
+
+    ul>li {
+      display: block;
+      float: left;
+      width: 200px;
+      border: 1px solid #000;
+    }
+
+    ul>li>a {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="text-center">580-float의 영향력을 차단하는 마감재</h1>
+
+  <ul>
+    <li><a href="#">네이버</a></li>
+    <li><a href="#">다음</a></li>
+    <li><a href="#">카카오</a></li>
+  </ul>
+
+  <p>품에 있는 사는가 풀이 때까지 그들은 넣는 말이다. 이것은 광야에 싹이 이상의 두기 불러 봄바람을 위하여서, 실로 가장 있는 피다. 하는 원대하고, 청춘에서만 피에 위하여서, 것은 곳이 듣는다.</p>
+
+  <p>하는 원대하고, 청춘에서만 피에 위하여서, 것은 곳이 듣는다. 싹이 이상의 두기 불러 봄바람을 위하여서, 실로 가장 있는 피다. 품에 있는 사는가 풀이 때까지 그들은 넣는 말이다. 이것은 광야에</p>
+</body>
+
+</html>

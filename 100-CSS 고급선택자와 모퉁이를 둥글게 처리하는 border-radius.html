@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100-CSS 고급선택자와 모퉁이를 둥글게 처리하는 border-radius</title>
+  <style>
+    div>p {
+      background-color: lightblue;
+    }
+
+    /* +는 인접한 형제를 뜻하는 선택자 */
+    div+p {
+      border: 1px solid red;
+      border-radius: 7px;
+      /*  border-radius: 7px;는 모서리를 둥글게 만들어지는 css */
+    }
+
+    div~p {
+      color: blue;
+      /* div~p ~는 div이후에오는 모든 p를 뜻함 
+    해석해보면 div이후에오는 모든p의 텍스트색을 파란색으로  */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>독도의 역사</h1>
+  <p>여러분은 우리나라 고유영토 '독도'에 대해 얼마나 알고 계신가요?<br />
+    사실 독도에 대한 애정과 관심은 많지만 정작 독도에 대해 설명하려고 하면 헷갈리는 경우가 많은게 사실이죠~
+  </p>
+  <h2>일본의 독도 침략</h2>
+  <div>
+    <p>러일전쟁을 거치며 독도가 전략적 중요성을 알게되었고, <br />
+      1905년 일본 마음대로 영토편입을 결정했습니다.
+    </p>
+    <p>당시는 을사조약으로 외교권을 박탈당한 상태여서 이에대해 항의했지만 아무 소용이 없었습니다.
+    </p>
+    <p>그러나 독도가 조선땅이라는것은 당시 일본인들이 더 잘 알고 있었어요.<br />
+      한일강제병합 이후에 일본에서 간행된 "일본수로지"에 보면 울릉도와 독도가 조선땅으로 표기될 정도였으니까요.
+    </p>
+  </div>
+  <p>참고문헌 : 독도총람(2015년 저자 김명기)</p>
+
+  <p>관련항목 : 독도, 울릉도</p>
+</body>
+
+</html>

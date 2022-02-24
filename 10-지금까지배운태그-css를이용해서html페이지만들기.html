@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10-지금까지배운태그-css를이용해서html페이지만들기</title>
+  <link rel="shortcut icon" href="./images/favicon.ico" />
+  <style>
+    #wrap {
+      width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      background-image: url(./images/이미지\ 2.png);
+      background-size: 1000px;
+    }
+
+    h1 {
+      color: snow;
+      font-family: "Lobster", cursive;
+      font-size: 100px;
+    }
+
+    span {
+      color: rgb(244, 247, 248);
+    }
+
+    p {
+      color: snow;
+      font-size: 50px;
+    }
+
+    .snow {
+      width: 10px;
+      height: 10px;
+      background: snow;
+      border-radius: 50%;
+      animation: snow 10s linear infinite;
+    }
+
+    @keyframes snow {
+      0% {
+        opacity: 0;
+        transform: translateY(0);
+      }
+
+      20% {
+        opacity: 0.5;
+        transform: translate(-15px, 20vh);
+      }
+
+      40% {
+        opacity: 0.6;
+        transform: translate(15px, 40vh);
+      }
+
+      60% {
+        opacity: 0.7;
+        transform: translate(-15px, 65vh);
+      }
+
+      80% {
+        opacity: 0.8;
+        transform: translate(0, 80vh);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(100vh);
+      }
+
+    }
+
+    address {
+      color: snow;
+      border: 1px double #e4dddd;
+    }
+  </style>
+  <script>
+    function createSnow() {
+      const el = document.createElement("div");
+      el.classList.add('snow');
+      el.style.marginLeft = randomPostion() + 'px';
+      document.body.appendChild(el);
+    }
+    function randomPostion() {
+      return Math.floor(Math.random() * window.innerWidth);
+    }
+    for (let i = 0; i < 50; i++) {
+      createSnow();
+    }
+
+  </script>
+</head>
+<!-- 계층 순서를 좀 다듬으면 괜찮을거 같다 -->
+
+<body>
+  <div id="wrap">
+    <a href=https://www.instagram.com>
+
+      <h1><em>Instagram</em></h1>
+
+    </a>
+
+    <p>
+
+
+      <span>인스타그램 만들어보기</span> <br />
+      <strong>#인스타#코딩</strong> <br />
+      #css#html#javascript<br />
+      #웹코딩#웹디자인<br />
+      #좋아요<br />
+      #2022년#호랑이해#<br />
+      #새해복#많이받으세요
+      <img class="insta" src="./images/인스타그램+로고.png" alt="인스타사진기로고이미지" />
+    </p>
+
+    <address>COMPANY INFO
+      회사명 : JUNGINBONG company<br />
+      주소 : 서울특별시 강서구 화곡동 <br />
+      대표자 :정인봉 <br />
+      사업자등록번호
+      550-97-01206
+      개인정보보호책임자
+      정인봉(JUNGINBONG@gmail.com)
+      전화번호
+      02-2693-0796
+      FAX
+      02-2693-0796<br />
+      <i>Copyright by INBONG. All rights reserved.</i>
+    </address>
+
+
+  </div>
+
+
+</body>
+
+
+</html>

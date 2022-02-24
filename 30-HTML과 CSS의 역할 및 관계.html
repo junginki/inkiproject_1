@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- html5 때부터 나홀로태그 끝에 (슬래시)를 생략할 수 있게 됨 -->
+  <title>30-HTML과 CSS의 역할 및 관계</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <style>
+    /* css는 우리가 보여주고 싶은대로 웹페이지가 화면에 보이도록 디자인하는 역할을 맡고 있다. */
+
+    img {
+      wich: 400px;
+      height: 270px
+    }
+
+    body {
+      /* 문단 , 문장의 정렬방식 */
+      text-align: center;
+    }
+
+    h1 {
+      /* 글자색 */
+      color: blue;
+    }
+
+    p {
+      /* 줄간격 */
+      line-height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>대한민국 영토 독도</h1>
+  <p>
+    <!-- br 은 break의 약자로 문장의 한줄바꿈 -->
+    <strong>독도에 대해 관심을 가져본적이 있을거에요.</strong><br />
+    그렇다면 당신은 독도에 대해 무엇을 알고 계신가요?<br />
+    <!-- 이미지는 글자 취급 받는다. 글자 한자와 같다. -->
+    <img src="./images/독도경치-1-small.jpg" alt="독도(서도와 동도)" height="600">
+    <img src="./images/굴바위.jpg" alt="독도(서도와 동도)" height="300">
+    <img src="./images/강치.png " alt="강치" /> <img src="images/닭바위.png" alt="닭바위" height="300">
+    <a href="https://www.google.co.kr/">
+      <img src="https://www.google.co.kr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="구글gogle이미지">
+    </a>
+
+  </p>
+</body>
+
+</html>

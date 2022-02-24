@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex는 그림</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+    #wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      width: 980px;
+      height: 920px;
+      margin: 30px auto;
+      border: 1px solid #000;
+      /*임시따라하다가 망함@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+    }
+
+    section {
+      width: 650px;
+      order: 100;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      width: 320px;
+      order: 200;
+      border: 1px solid #000;
+    }
+
+    header>div {
+      width: 320px;
+      height: 250px;
+      background-color: skyblue;
+    }
+
+    header>div:nth-child(4) {
+      height: 140px;
+    }
+
+    section>article.product {}
+
+    section>.product>div {
+      width: 320px;
+      height: 510px;
+    }
+
+    section>.product>div>p {}
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div>
+        1
+      </div>
+      <div>
+        2
+      </div>
+      <div>
+        3
+      </div>
+      <div class="lastbox">
+        4
+      </div>
+    </header>
+    <section>
+
+      <article style="display: flex; margin-bottom: 10px;" class="product "></article>
+      <div style="height: 510px;">
+        <p style=" background-color: #E73C4E; height: 250px;">청바지</p>
+        <p style="background-color: skyblue;height: 250px;">운동화</p>
+      </div>
+
+      <div style=" background-color: #E73C4E; ">ad</div>
+
+      <article style=" background-color: #E73C4E; height: 400px;" class="news ">뉴스</article>
+    </section>
+  </div>
+</body>
+
+</html>

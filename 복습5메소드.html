@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>복습5</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
+    body {
+      font-size: 20px;
+    }
+
+    h {
+      font-family: 'Song Myung', serif;
+      text-align: center;
+    }
+
+    p.문단2 {
+      color: forestgreen;
+    }
+
+    p.문단3 {
+      color: red;
+      font-weight: 800;
+    }
+
+    span.주석1 {
+      color: forestgreen;
+    }
+
+    span.밑줄1 {
+      font-weight: 800;
+      text-decoration: underline;
+    }
+
+    span.닫기중괄호1 {
+      color: #fff
+    }
+
+    span.닫기중괄호2 {
+      color: #fff
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <h1>메소드의 사용법</h1> <br />
+    <p>
+      <span class="주석1">/*선언식함수 person을 작성하고 호출하시오. <br />
+        function person(){<br />
+
+        }<br />
+
+        함수의 호출<br />
+        person();<br />
+        */</span><br />
+      <br />
+      <br />
+    <p class="문단2">//객체(object) 변수 hong의 name, age 속성에 값을 각각 '홍길동', 20으로 하여 선언하시오.</p><br />
+    const hong = {<br />
+    name : '홍길동',<br />
+    age : 20,<br />
+    info : function(){<br />
+    console.log('나는 20세의 홍길동입니다.');<br />
+    },
+    future : function(){<br />
+    <p class="문단3">//객체의 프로퍼티에 할당된 함수(메소드)에서 name, age를 활용하는 방법<br />
+      //메소드 실행시 자바스크립트 해석기가 this를 hong으로 대체한다.</p><br />
+    <span class="밑줄1"> console.log(this.name, this.age);<br />
+    </span>
+    <span class="닫기중괄호1">투명1</span>}<br />
+    <span class="닫기중괄호2"> 투명처리2</span> }; <br />
+
+    //콘솔창에 한줄로 name, age 속성의 값을 출력하시오.<br />
+    console.log(hong.name, hong.age);<br />
+
+    //hong 객체변수의 info 메소드를 호출하시오.<br />
+    hong.info();<br />
+    hong.future();<br />
+    </p>
+
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>550-유형별 flex 레이아웃-4</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <style>
+    /* 복붙완료@@@ */
+
+
+    #wrap {
+      width: 600px;
+      height: 500px;
+      margin: 30px auto;
+    }
+
+    section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      justify-content: space-between;
+      align-content: space-between;
+
+      width: 100%;
+      height: 100%;
+    }
+
+    #top {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 300px;
+    }
+
+    #top>#left {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      width: 32%
+    }
+
+    #top>#left>article:nth-child(1) {
+      width: 100%;
+      height: 48%;
+      background-color: pink;
+    }
+
+    #top>#left>article:nth-child(2) {
+      width: 100%;
+      height: 48%;
+      background-color: #ccc;
+    }
+
+    #top>article {
+      width: 32%;
+      background-color: pink;
+    }
+
+    #top>#right {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      width: 32%;
+    }
+
+    #top>#right>article {
+      width: 100%;
+      height: 48%;
+      background-color: #ccc;
+    }
+
+    #bottom {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 190px;
+    }
+
+    #bottom>article {
+      width: 66%;
+      height: 98%;
+      background-color: pink;
+    }
+
+    #bottom>#tail {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      width: 32%;
+      height: 98%;
+    }
+
+    #bottom>#tail>article:nth-child(1) {
+      width: 100%;
+      height: 62%;
+      background-color: #ccc;
+    }
+
+    #bottom>#tail>article:nth-child(2) {
+      width: 100%;
+      height: 32%;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+
+    <section>
+      <div id="top">
+
+        <div id="left">
+          <article>left-top</article>
+          <article>left-bottom</article>
+        </div>
+
+        <article>right</article>
+
+        <div id="right">
+          <article>right-top</article>
+          <article>right-bottom</article>
+        </div>
+
+      </div>
+
+      <div id="bottom">
+        <article>left</article>
+
+        <div id="tail">
+          <article>right-top</article>
+          <article>right-bottom</article>
+        </div>
+
+      </div>
+
+    </section>
+  </div>
+</body>
+
+</html>

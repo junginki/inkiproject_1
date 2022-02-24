@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃연습</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+    #wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      width: 620px;
+      height: 410px;
+      margin: 20px auto;
+    }
+
+    p {
+      width: 200px;
+    }
+
+    .flexbox_1 {
+      margin-right: 10px;
+    }
+
+    .flexbox_2 {
+      margin-right: 10px;
+
+
+    }
+
+    .left_1 {
+      height: 90px;
+      margin-bottom: 10px;
+    }
+
+    .left_2 {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    .left_3 {
+      height: 210px;
+    }
+
+
+    .center_1 {
+      height: 340px;
+      margin-bottom: 10px;
+    }
+
+    .center_2 {
+      height: 50px;
+    }
+
+    .right_1 {
+      height: 70px;
+      margin-bottom: 10px;
+    }
+
+    .right_2 {
+      height: 250px;
+      margin-bottom: 10px;
+    }
+
+    .right_3 {
+      height: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+
+    <div class="flexbox_1">
+      <p class="left_1" style="background-color: pink;">left_1</p>
+      <p class="left_2" style="background-color: red;">left_2</p>
+      <p class="left_3" style="background-color: greenyellow;">left_3</p>
+    </div>
+
+    <div class="flexbox_2">
+      <p class="center_1" style="background-color: blueviolet;">center1</p>
+      <p class="center_2" style="background-color: red;">center2</p>
+    </div>
+
+
+    <div class="flexbox_3">
+      <p class="right_1" style="background-color: gray;"> right_1</p>
+      <p class="right_2" style="background-color: greenyellow;">right_2</p>
+      <p class="right_3" style="background-color: pink;">right_3 </p>
+    </div>
+
+
+
+  </div>
+</body>
+
+</html>

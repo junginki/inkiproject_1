@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>130-inline과 block요소의 성질을 동시에 가진 inline-block</title>
+  <style>
+    h1 {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    p {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+    }
+
+    p.seodo {
+      background-image: url(./images/seodo.jpg);
+      background-size: cover;
+
+    }
+
+    p.dondo {
+      background-image: url(./images/dongdo.jpg);
+      background-size: cover;
+
+    }
+
+    /* border은 선택자의 width height크기를 따름 */
+  </style>
+
+</head>
+
+<body>
+  <div id="wrap">
+    <h1>독도는 2개의 섬으로 구성</h1>
+    <p class="seodo">서도</p>
+    <p class="dondo">동도</p>
+    <!-- 요소간의 줄바꿈은 한칸의 공백으로 인식되기 때문에 한칸만큼 떨어져 있게 된다. -->
+  </div>
+</body>
+
+</html>

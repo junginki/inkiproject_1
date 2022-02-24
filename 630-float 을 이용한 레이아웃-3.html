@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>630-float 을 이용한 레이아웃-3</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+    #wrap {
+      width: 1000px;
+      margin: 50px auto;
+    }
+
+    header {
+      width: 1000px;
+      text-align: center;
+    }
+
+    header>h1 {
+      display: block;
+      float: left;
+      width: 180px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 23px;
+      margin-right: 40px;
+      background-color: pink;
+    }
+
+    header>h1>a {
+      display: block;
+      width: 180px;
+      height: 50px;
+    }
+
+
+    header>nav>ul>li {
+      display: block;
+      float: left;
+
+      width: 187px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 12px;
+      margin-right: 10px;
+      background-color: yellow;
+    }
+
+    header>nav>ul>li:last-child {
+      margin-right: 0;
+    }
+
+    /* 앵커태그의 클릭영역 넓혀주기@@@ */
+    header>nav>ul>li>a {
+      display: block;
+      width: 187px;
+      height: 50px;
+
+    }
+
+    header::after {
+      display: block;
+      clear: both;
+      content: '';
+    }
+
+    /* header의 마감처리까지 마무리@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+
+    section>p {
+      float: left;
+      width: 1000px;
+      height: 400px;
+      font-size: 11.5px;
+      margin-top: 10px;
+      padding-top: 20px;
+      text-align: center;
+      border: 1px solid #000;
+      box-sizing: border-box;
+    }
+
+    section::after {
+      display: block;
+      clear: both;
+      content: '';
+    }
+
+    /* section의 마감처리@@@@@@@@@@@@@@@@ */
+
+
+    footer>address {
+      height: 70px;
+      line-height: 70px;
+      margin-top: 10px;
+      text-align: center;
+      border: 1px solid #000;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <h1><a href="#">한국무역협회</a></h1>
+
+      <nav>
+        <ul>
+          <li><a href="#">무역통상정보</a></li>
+          <li><a href="#">회원/업무지원</a></li>
+          <li><a href="#">무역통계</a></li>
+          <li><a href="#">협회안내</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+
+    <section>
+      <p>하는 원대하고 청춘에서만 피에 위하여서. 것은곳이돋는다. 싹이 이상의 두기 불러 봄바람을 위하여서. 실로 가장 있는 피다. 품에 있는 사는가 풀이 때까지 그들은 넣는 말이다. 이것은 광야에</p>
+    </section>
+    <hr />
+
+
+    <footer>
+      <address>&copy;Designed by 정인기</address>
+    </footer>
+
+  </div>
+</body>
+
+</html>

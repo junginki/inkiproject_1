@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>복습4변수파괴시기</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Jua&display=swap');
+
+
+    h1 {
+      width: 1000px;
+      font-size: 64px;
+      font-family: 'Dongle', sans-serif;
+      text-align: center;
+    }
+
+    p {
+      width: 1000px;
+      font-size: 32px;
+      font-family: 'Jua', sans-serif;
+      text-align: center;
+    }
+
+    span.스판1 {
+      color: red;
+    }
+
+    span.스판2 {
+      color: red;
+    }
+
+    p.문단1 {
+      display: inline-block;
+      margin-right: 200px;
+      border: 3px solid black;
+    }
+
+    p.문단2 {
+      display: inline-block;
+      border: 3px solid black
+    }
+
+    i.강조 {
+      color: red;
+      font-weight: 800;
+    }
+
+    strong {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="warp">
+    <h1>변수의 파괴시기</h1>
+    <hr />
+    <p style="margin-top: -px;">참고내용</p> <br />
+    <p class="문단1">
+      <i class="강조">변수의 파괴 시기가 다르다.</i><br />
+      변수는 값을 기억하기 위해 메모리를 할당받아 사용한다. 변수를 다 사용했으면 파괴되는데<br />
+      변수를 파괴한다는 것은 이 변수가 차지하고 있던 메모리를 회수한다는 뜻이다.<br />
+
+      시스템의 메모리가 무한하지 않으므로 변수는 필요할 때만 메모리를 차지하며<br />
+      다 사용하면 다른 변수를 위해 자리를 내 주어야 한다. <br />
+      변수의 메모리가 회수되면 변수의 존재 자체가 사라진다.<br />
+
+      <span class="스판1">전역변수는 프로그램에 소속되어 있고 모든 함수에서 사용 가능해야 하므로<br />
+        프로그램이 실행중인 동안에는 파괴되지 않는다.</span><br />
+      실행 직후에 생성되어 프로그램이 실행되는 동안에는 계속 메모리를 차지하고 있으며<br />
+      프로그램이 종료되면 비로소 파괴된다.<br />
+      즉, 전역변수는 프로그램과 운명을 같이 한다.<br />
+
+    <p class="문단2"><strong>지역변수</strong>는 특정 함수 내부에서만 사용되므로<br />
+      함수가 실행중일 때만 메모리를 차지하며 함수가 끝나면 변수의 생명도 끝이 난다.<br />
+      함수의 임무를 위해 생성되는 임시 기억 장소이기 때문에 함수가 종료되면 더 이상
+      이 변수를 유지할 필요가 없어진다.<br />
+      <span class="스판2">즉, 지역변수는 자신이 속해 있는 함수와 운명을 같이 한다.<br />
+        함수가 호출되면 생성되고 함수가 끝나면 파괴된다. 그러다가 또 함수가 호출되면 생성되고 파괴되기를 계속
+        반복한다.</span>
+    </p>
+    </p>
+  </div>
+</body>
+
+</html>
