@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>640-하나의 박스를 absolute 배치</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+    .box {
+      position: static;
+      position: absolute;
+      /* 반드시 기억해야한다@@@@@@@@@@@@@@@@@@@@@@@@
+      absolute의 진정한 희미 복붙완료@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+      특적기준점을 기준으로 지정한 좌표값에(left , right , top , bottom) 요소를 배치 
+      기준점을 따로 지정하지 않으면 body가 기준
+     기준점은 직계부모를 포함한 해당요소의 조상에게만 설정 가능
+      */
+      /* left: 100px;
+      top: 50px; */
+      bottom: 100px;
+      right: 50px;
+
+      /* x를 대표하는좌표와 y를 대표하는좌표하나씩만 사용할 수 있다. */
+
+      width: 200px;
+      height: 200px;
+      border: 5px solid blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="box"></h1>
+</body>
+
+</html>
